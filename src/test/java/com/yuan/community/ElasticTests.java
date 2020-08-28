@@ -76,14 +76,14 @@ public class ElasticTests {
     public void testInsertList() throws IOException {
         BulkRequest bulkRequest = new BulkRequest();
         ArrayList<List<DiscussPost>> discussPosts = new ArrayList<>();
-        discussPosts.add(discussPostMapper.selectDiscussPosts(101,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(102,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(103,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(111,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(112,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(131,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(132,0,100));
-        discussPosts.add(discussPostMapper.selectDiscussPosts(133,0,100));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(101,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(102,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(103,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(111,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(112,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(131,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(132,0,100,0));
+        discussPosts.add(discussPostMapper.selectDiscussPosts(133,0,100,0));
 
         for (int i = 0; i < discussPosts.size(); i++) {
             for (int j = 0; j < discussPosts.get(i).size(); j++) {

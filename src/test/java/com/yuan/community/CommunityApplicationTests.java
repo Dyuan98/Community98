@@ -32,7 +32,7 @@ class CommunityApplicationTests {
 	public void testSelectDiscuss(){
 		int i = discussPostMapper.selectDiscussPostRows(101);
 		System.out.println(i);
-		List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 5);
+		List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 5,0);
 		for (DiscussPost discussPost : discussPosts) {
 			System.out.println(discussPost);
 		}
