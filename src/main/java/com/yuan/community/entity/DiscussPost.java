@@ -25,10 +25,10 @@ public class DiscussPost {
     private String content;
 //
     @Field(type = FieldType.Integer)
-    private int type;
+    private int type;    // 0：普通帖子；1：置顶帖子
 //
     @Field(type = FieldType.Integer)
-    private int status;
+    private int status;  // 0：正常；1：精华；2：拉黑；
 //
     @Field(type = FieldType.Date, pattern = "yyyy-MM-dd HH:mm:ss", format = DateFormat.custom)
     private Date createTime;
