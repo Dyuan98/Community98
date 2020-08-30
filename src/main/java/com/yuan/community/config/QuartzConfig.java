@@ -18,6 +18,7 @@ public class QuartzConfig {
     // 3.将FactoryBean注入给其他的Bean.
     // 4.该Bean得到的是FactoryBean所管理的对象实例.
 
+
     // 配置JobDetail  ,测试使用
     // @Bean
     public JobDetailFactoryBean alphaJobDetail() {
@@ -60,7 +61,8 @@ public class QuartzConfig {
         factoryBean.setJobDetail(postScoreRefreshJobDetail);
         factoryBean.setName("postScoreRefreshTrigger");
         factoryBean.setGroup("communityTriggerGroup");
-        factoryBean.setRepeatInterval(1000 * 60 * 60);   //设置60分钟刷新一次
+        // 此时间间隔设置不起作用，无论程序何时启动，都会在每分钟41秒左右刷新一次
+        factoryBean.setRepeatInterval(5000);   //设置刷新时间
         factoryBean.setJobDataMap(new JobDataMap());
         return factoryBean;
     }
