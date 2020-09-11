@@ -131,6 +131,12 @@
 			<version>2.8.0</version>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--		</dependency>-->
+<!--		引入以上依赖后，好像会引起冲突-->
+
 
 	</dependencies>
 

@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--访问该页面时,在此处生成CSRF令牌.-->
-	<!--	<meta name="_csrf" th:content="${_csrf.token}">-->
+	<!--	<meta name="_csrf" th:ccontent="${_srf.token}">-->
 	<!--	<meta name="_csrf_header" th:content="${_csrf.headerName}">-->
 
-	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
+	<link rel="icon" href="http://qft9hh4v7.hb-bkt.clouddn.com/b002f2c43c9f4bbfa0ff9e5e8d4eca52"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
-	<title>牛客网-首页</title>
+	<title>源隐社区-首页</title>
 </head>
 <body>	
 	<div class="nk-container">
@@ -169,12 +169,12 @@
 		</div>
 
 		<!-- 尾部 -->
-		<footer class="bg-dark">
+		<footer class="bg-dark" th:fragment="tail">
 			<div class="container">
 				<div class="row">
 					<!-- 二维码 -->
 					<div class="col-4 qrcode">
-						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
+						<img src="http://qft9hh4v7.hb-bkt.clouddn.com/d75aff4f3fc9496496d37bfb202ef0e2" class="img-thumbnail" style="width:136px;" />
 					</div>
 					<!-- 公司信息 -->
 					<div class="col-8 detail-info">
@@ -200,7 +200,7 @@
 										<a class="nav-link text-light" href="#">免责声明</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link text-light" href="#">友情链接</a>
+										<a class="nav-link text-light" th:href="@{https://github.com/Dyuan98}">Github链接</a>
 									</li>
 								</ul>
 							</div>
@@ -209,18 +209,16 @@
 							<div class="col">
 								<ul class="nav btn-group-vertical company-info">
 									<li class="nav-item text-white-50">
-										公司地址：北京市朝阳区大屯路东金泉时代3-2708北京牛客科技有限公司
+										地址：华盛顿哥伦比亚特区西北宾夕法尼亚大道1600号
 									</li>
 									<li class="nav-item text-white-50">
-										联系方式：010-60728802(电话)&nbsp;&nbsp;&nbsp;&nbsp;admin@nowcoder.com
+										联系方式：2967753215@qq.com
 									</li>
 									<li class="nav-item text-white-50">
-										牛客科技©2018 All rights reserved
+										源隐社区©2020 All rights reserved
 									</li>
 									<li class="nav-item text-white-50">
-										京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;
-										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
-										京公网安备 11010502036488号
+										惊 ICP备10000000000号-5 &nbsp;&nbsp;&nbsp;&nbsp;
 									</li>
 								</ul>
 							</div>
