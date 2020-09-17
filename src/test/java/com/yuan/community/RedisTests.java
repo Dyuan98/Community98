@@ -55,6 +55,7 @@ public class RedisTests {
         System.out.println(redisTemplate.opsForList().leftPop(redisKey));
         System.out.println(redisTemplate.opsForList().leftPop(redisKey));
         System.out.println(redisTemplate.opsForList().leftPop(redisKey));
+
     }
 
     @Test
